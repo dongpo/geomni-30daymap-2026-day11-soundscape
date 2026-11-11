@@ -1,0 +1,17 @@
+{
+  "open_drawer_taiwan_visible": true,
+  "close_restores_marker_position": {
+    "before": [
+      853.0059204101562,
+      802.0000610351562
+    ],
+    "after": [
+      853.0059204101562,
+      802.0000610351562
+    ]
+  },
+  "drawer_left": 976.25,
+  "player_right": 956.25,
+  "repeat_open_pass": true,
+  "console_errors": []
+}
