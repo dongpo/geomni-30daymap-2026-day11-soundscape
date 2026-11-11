@@ -1,0 +1,39 @@
+Day11 v4｜聲音與地方相遇｜本機審稿，未公開
+
+設計依據
+Siepmann, Edler & Kühne (2020), Soundscapes in Cartographic Media, pp.247–263, DOI 10.1007/978-3-658-30956-5_13。將聲音放回可辨識地景，並區別物理環境、聲音內容與個人的地方感。本圖不是論文案例的複製，也未重現其社群文字分類。
+
+三個證據層
+1. 採錄紀錄：原典藏位置、採錄日期、作者與錄音。位置可能代表移動採錄，不是每個聲音發出的座標。
+2. 模型推測：沿用day11-yamnet-v3實跑300段，每段前30秒。6群可重疊；未達門檻不是沒有聲音。點時間軸播放對應候選片段。未人工驗證準確率。
+3. 人的感受：初始沒有紀錄；由使用者署名自述，存於本瀏覽器並可匯出。不以模型分數判斷安靜、舒適或地方認同。
+
+地理資料
+OpenStreetMap contributors，Geofabrik Taiwan固定檔 taiwan-261109.osm.pbf。
+來源 https://download.geofabrik.de/asia/taiwan-261109.osm.pbf
+說明 https://download.geofabrik.de/asia/taiwan.html
+授權 ODbL 1.0，https://www.openstreetmap.org/copyright
+PBF、抽取資料、查詢失敗紀錄與程式皆保留在本版本。實際時間戳及數量見evidence/spatial-qa.json。
+海岸：natural=coastline；河流：waterway=river（不包含全部溪流）。
+主要道路：highway=motorway/trunk/primary/secondary，不含所有巷弄，也非車流量。
+住宅用地：landuse=residential有效閉合way；本次未組裝multipolygon relation，故範圍不完整，不等於完整聚落或都市邊界。
+聚落名稱：place=city/town/village/hamlet/suburb節點；點只代表地名位置，不當作區界。
+OSM完整性不均；5公里內無取得資料，不表示現地沒有該地物。離島是否有各種幾何以原檔為準。
+歷史錄音（2012–2025）與2026地物版本不同，不能宣稱還原採錄當時環境。
+
+空間方法
+WGS84座標投影EPSG:3826，使用未簡化幾何計算直線最近距離，住宅面內為0。北臺灣最適用；全臺及西側離島的投影距離屬探索性近似，不作工程量測。搜尋上限5000公尺；篩選提供250/500/1000公尺。圖面距離四捨五入至10公尺／0.1公里，避免暗示座標精度。
+地圖幾何只為顯示而簡化8公尺，距離與最近點仍用原始幾何。虛線是幾何量測，不是聲音傳播或因果關係。
+交叉表分母為符合該距離條件的錄音數，分子為有對應模型候選的錄音數；不同地景與聲音群可重疊。表格固定全300筆，不隨聲音搜尋變更；會隨距離門檻更新。
+
+錄音與模型
+繼承 ../day11-yamnet-v3/DATA-NOTES.txt、RESULTS.html及evidence，沒有重跑冒充新實測。
+300筆共9000秒分析；288筆同一採錄者吳燦政；無全臺代表性。271筆CC BY 3.0，29筆Public Domain Mark。每筆作者、原始典藏與授權保留，原檔未修改。
+瀏覽器把本機MP3讀成Blob播放，解決既有伺服器不支援Range的跳時問題；不是重新編碼。MP3解碼起點可能有約0.14秒差異。
+
+重現（專案根目錄）
+work/day09-env/bin/python outputs/day11-spatial-v4/scripts/extract_pbf.py
+work/day09-env/bin/python outputs/day11-spatial-v4/scripts/process_context.py
+python3 outputs/day11-spatial-v4/scripts/build.py
+使用既有根目錄HTTP伺服器開啟 outputs/day11-spatial-v4/index.html。
+本版依賴相鄰day11-yamnet-v3的原音、模型輸出、Leaflet與時間軸程式；不可只搬走單一HTML。OSM底圖需網路，已取得的地理向量與錄音皆在本機。

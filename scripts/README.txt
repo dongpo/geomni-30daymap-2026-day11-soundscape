@@ -1,0 +1,1 @@
+Historical build scripts retain original project-relative paths. reproduce/ holds upstream processing scripts. The bundled root index.html is the portable playback build. Original large source data and MP3 remain preserved in the local project. Do not run finalize.py: historical governance operation.

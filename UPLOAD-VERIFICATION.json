@@ -1,0 +1,11 @@
+{
+  "map_browser_render": true,
+  "remote_archive_audio": {
+    "readyState": 4,
+    "playing": true,
+    "time_after_seek": 11.548078
+  },
+  "console_errors": [],
+  "video_decode": "ffmpeg full decode passed",
+  "video_audio": "silent"
+}

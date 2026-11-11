@@ -1,0 +1,12 @@
+{
+  "duration_seconds": 34,
+  "resolution": [
+    1600,
+    960
+  ],
+  "encoded_fps": 24,
+  "captured_frames": 615,
+  "method": "CUA timestamped browser screenshots, original elapsed time within segments; repeated frames, no synthetic motion",
+  "audio": "none; audio playback was verified in browser but system audio was not captured",
+  "sha256": "4a70a96ad5666fb5921c7d0cf16fd6208c48d1039b9fa7fe88ad15e1064d26ed"
+}
