@@ -1,12 +1,25 @@
 {
-  "duration_seconds": 34,
+  "duration_seconds": 22,
   "resolution": [
-    1600,
-    960
+    1366,
+    1168
+  ],
+  "original_capture_resolution": [
+    1366,
+    1080
+  ],
+  "image_scale": [
+    1,
+    1
   ],
   "encoded_fps": 24,
-  "captured_frames": 615,
-  "method": "CUA timestamped browser screenshots, original elapsed time within segments; repeated frames, no synthetic motion",
-  "audio": "none; audio playback was verified in browser but system audio was not captured",
-  "sha256": "4a70a96ad5666fb5921c7d0cf16fd6208c48d1039b9fa7fe88ad15e1064d26ed"
+  "capture_count": 191,
+  "source_id": "aporee_39957_45649",
+  "audio_source": "https://archive.org/details/aporee_39957_45649",
+  "audio_license": "https://creativecommons.org/licenses/by/3.0/",
+  "audio_credit": "Wu,Tsan-Cheng",
+  "source_audio_start_seconds": 0.255531,
+  "audio": "Original MP3 excerpt muxed against measured browser playback clock; no system-audio capture, no narration, no background music or mixing. AAC transcoding, original gain.",
+  "max_capture_interval_seconds": 0.2772059999999996,
+  "sha256": "a6754e854598d9abb016ea9b0b989b35da79eda127ba2246dadebea7556eb4b9"
 }
