@@ -1,6 +1,6 @@
 # Geomni Day11 — Soundscape Pulse
 
-[Open interactive map](https://dongpo.github.io/geomni-30daymap-2026-day11-soundscape/) · [Watch/download 22-second MP4](https://dongpo.github.io/geomni-30daymap-2026-day11-soundscape/Geomni-Day11-Soundscape-Pulse.mp4)
+[Open interactive map](https://dongpo.github.io/geomni-30daymap-2026-day11-soundscape/) · [Watch/download 22-second MP4](https://dongpo.github.io/geomni-30daymap-2026-day11-soundscape/Geomni-Day11-Soundscape-Pulse-centered-audio-v2.mp4)
 
 Interactive soundscape map with 300 source recordings, YAMNet candidate events and a cross-date time-of-day view (299 eligible timestamps).
 
