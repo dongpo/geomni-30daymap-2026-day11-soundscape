@@ -1,0 +1,9 @@
+{
+  "decoded_audio_matches_source_correlation": 0.9988362622052019,
+  "decoded_audio_seconds": 21.8,
+  "screen_scale_x": 1,
+  "screen_scale_y": 1,
+  "timestamp_alignment_method": "Screenshot midpoint browser currentTime; latest frame carried forward",
+  "maximum_frame_sampling_interval_seconds": 0.2314899999999973,
+  "full_video_audio_decode": "PASS"
+}

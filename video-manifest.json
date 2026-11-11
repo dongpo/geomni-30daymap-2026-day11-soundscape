@@ -13,13 +13,13 @@
     1
   ],
   "encoded_fps": 24,
-  "capture_count": 191,
+  "capture_count": 215,
   "source_id": "aporee_39957_45649",
   "audio_source": "https://archive.org/details/aporee_39957_45649",
   "audio_license": "https://creativecommons.org/licenses/by/3.0/",
   "audio_credit": "Wu,Tsan-Cheng",
-  "source_audio_start_seconds": 0.255531,
+  "source_audio_start_seconds": 0.4993735,
   "audio": "Original MP3 excerpt muxed against measured browser playback clock; no system-audio capture, no narration, no background music or mixing. AAC transcoding, original gain.",
-  "max_capture_interval_seconds": 0.2772059999999996,
-  "sha256": "a6754e854598d9abb016ea9b0b989b35da79eda127ba2246dadebea7556eb4b9"
+  "max_capture_interval_seconds": 0.2314899999999973,
+  "sha256": "27537898f4d7d257333d92739e719c75a8d1a69bbacb7aba0e5168c15c13c9de"
 }
